@@ -1,96 +1,123 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<body style="background-color:lightyellow">
-<h1 title="excited" style="color:red;text-align:center">WEB DEV EXAMPLE</h1>
-<hr>
-<h2 title="oh!thats me" style="background-color:rgb(238, 130, 238);text-align:center;font-size:200%"><i> AISHA SARTAJ</i></h2>
-<p style="font-size:130%;color:blue">Hi there peeps, so this is my first project in web dev using only html, given by my chapter IET.Before going through my page, click the bar</p>
-<button type="button" onclick="alert('keep smiling and lenient checking ;-)')">click me!</button>
-<p style="font-family:courier;font-size:130%;color:green">I am aisha sartaj!!<br>people call </p>
-<pre style="font-size:150%"> 
-aishu, 
-chinese cat, 
-choti, hehe
-</pre>
-<p style="color:red;font-size:130%">find out cool stuff about my chapter in the link below</p>
-<a href="http://ietvit.com/" title="go to iet vit website" style="font-size:130%">visit iet website</a>
-<img src="https://www.theiet.org/media/2563/untitled-7.jpg" width="500" height="100" alt="IET logo">
-<h1> Plan Of Learning Web Dev</h1>
-<style>
-table,th,td{
-border: 3px solid purple;border-collapse:collapse;}
-th {text-align: left;}
-table#t01 th{background-color:lightblue}
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><style>
+
+body{background-image:url("roses.jpg");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 2600px;
+     }
+h1{background-color:violet;}
+h1.inset {border-style: inset;}
+p{color:red}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(241,196,15);
+  font-size:22px;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover:(.active) {
+  
+}
+
+.active {
+  background-color: darkblue;
+}
+*{box-sizing:border-box;}
+input[type=text]{width:100%;padding 25px 25px;
+margin:8px 0;border:2px solid blue;border-radius:4px;outline:none;}
+input[type=text]:focus{background-color: lightblue;}
+textarea {
+  width: 50%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid blue;
+  border-radius: 4px;
+  background-color:white;
+  font-size: 20px;
+  resize: none;
+}
+body {
+  max-width:500px
+  padding: 10px;
+  border: 10px darkgreen;
+  margin:0px;
+  outline-style: solid;
+  outline-color: violet;
+}
+
+h1.inset {border-style: inset;border-color:rgb(192, 57, 43  
+);color:darkblue;text-align:center;font-size:80px;font-style: italic;text-shadow: 1px 2px yellow}
+h2.dashed{border-style: dashed;border-color:darkblue;color:blue;text-align:center;text-shadow: 1px  black;font-style: italic}
+p,ol,form.inset{border-style:inset;padding: 25px 25px 25px 25px;font-size:20px;color:blue;font-family: "Comic Sans MS", cursive, sans-serif;font-style: oblique}
+a{text-decoration: none;}
+div.fixed{position:fixed;top:10px;right:0;width:350px;border:3px solid darkblue;font-size:22px;text-align:center;}
+div{border-style:inset;padding: 25px 25px 25px 25px;font-size:20px;color:green;font-family: "Comic Sans MS", cursive, sans-serif;font-style: oblique}
+.img{float:right;}
+.clearfix{overflow:auto;}
+section{text-align:center;background-color:lightblue}
+a.highlight:hover{color:red;}
 </style>
-<table id="t01" style="width:100%">
-<tr>
-<th style="font-size:130%">course</th>
-<th style="font-size:130%">deadline</th>
-<tr>
-<td style="font-size:130%">html</td>
-<td style="font-size:130%">may 5</td>
-</tr>
-<tr>
-<td style="font-size:130%">css</td>
-<td style="font-size:130%">may 12</td>
-</tr>
-<tr>
-<td style="font-size:130%">css implementation</td>
-<td style="font-size:130%">may 26</td>
-</tr>
-<tr>
-<td style="font-size:130%">javascript</td>
-<td style="font-size:130%">june 2</td>
-</tr>
-<tr>
-<td style="font-size:130%">firebase</td>
-<td style="font-size:130%">june 9</td>
-</tr>
-</table>
-<h1> Plan Of Movies In Holidays</h1>
-<ul style="list-style-type:circle;font-size:130%">
-<li>soty2</li>
-<li>avengers-endgame</li>
-<ul style="list-style-type:square;">
-<li>also all marvel movies</li>
+<body>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#certificates">Certificates</a></li>
+
+  <li><a href="#honours">Honours And Awards</a></li>
+  <li><a href="#projects">Projects</a></li>
 </ul>
-<li>freinds all seasons</li>
-</ul>
-<style>
-span.note{font-size:130%;color:brown}
-</style>
-<h1>My Hobbies</h1>
-<p>I love <span class="note">dancing,drawing</span> though i dont find much time doing them</p> 
-<h1>An example of form</h1>
-<p>Let me know who you are</p>
-<form>
-<fieldset>
-<legend>your details:</legend>
-first name:<br>
-<input type="text" name="firstname" autofocus><br>
-last name:<br>
-<input type="text" name="lastname"><br>
-email:<br>
-<input type"email" name="email"><br>
+<div class="fixed">SUMMER PROJECT</div>
+<p id="demo" style="text-align:center;font-size:30px;color:maroon;"></p>
+<h1 class="inset">AISHA SARTAJ</h1>
+<h2 class="dashed">A LIL' ABOUT MYSELF</h2>
+<div class="clearfix">
+<img class="img" src="aisha.jpg" alt="aisha sartaj" width=200px height=200px>
+Hi all, I am <b>AISHA SARTAJ</b>, and I am currently pursuing my engineering in <a class="highlight" href="http://www.vit.ac.in/">VIT</a>,VELLORE.
+I am new to coding and its going tough right now,and so I aim to improve my coding skills in this summer.
+Though my guity pleasure is sleeping, I still work hard and so like challenges as it keeps me motivated. <section>
+  <button onclick="myFunction()" style="font-size:20px; text-align: center;">Aisha Sartaj at <a class="highlight" href="http://www.ietvit.com/tuc/">VITTUC'19</a></button><p id="demo"></p><script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "MY FIRST EVENT IN IET!!";
+}
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toUTCString();
+</script></section> </div>
+
+<p style="text-align:center;color:darkred;"><b>
+<span>EVERYTHING IS </span><span style="text-decoration:line-through;">IM</span><span>POSSIBLE</span></b>
+</p>
+<h2 class="dashed">MY CONTACT DETAILS</h2>
+<ol class="inset">
+<li>email id: aishasartaj1@gmail.com</li>
+<li>ph.no. :7675896783 </li>
+<li>F-623,girls hostel,vit university,vellore</li>
+</ol>
+<h2 class="dashed">WEBSITES OF MY CHAPTER AND CLUB</h2>
+<ol class="inset">
+<li style="font-size:100%"><a class="highlight" href="https://www.theiet.org/">INSTITUTION OF ENGINEERING AND TECHNOLOGY(IET)</a></li>
+<li style="font-size:100%"><a class="highlight" href="https://www.toastmasters.org/">TOASTMASTERS INTERNATIONAL(TMI) </a></li>
+</ol>
+<h2 class="dashed">MY FAVOURITE SONGS</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m7Bc3pLyij0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 <br>
-comment on webpage:<br>
-<input type="radio" name="comment" value="good">good<br>
-<input type="radio" name="comment" value="ok">ok<br>
-<input type="radio" name="comment" value="bad">bad<br>
-<br>
-which is your favourite language:<br>
-<select name="languages">
-<option value="c++">c++</option>
-<option value="python">python</option>
-<option value="java">java</option>
-</select><br><br>
-Any suggestion:??<br>
-<textarea name="message" rows="5" cols="30"></textarea><br>
-<input type="submit" value="submit">
-<input type="reset">
-</fieldset>
-</form>
-<p>thanku for visiting</p>
+<a  href="contact.html" style="font-size: 50px;border-style: inset;border-color:violet;color:black;background-color :lightblue;text-align:enter;">CONTACT ME</a>
+
+
 </body>
 </html>

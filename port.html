@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><style>
+
+body{background-image:url("roses.jpg");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 2600px;
+     }
+h1{background-color:violet;}
+h1.inset {border-style: inset;}
+p{color:red}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(241,196,15);
+  font-size:22px;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover:(.active) {
+  
+}
+
+.active {
+  background-color: darkblue;
+}
+*{box-sizing:border-box;}
+input[type=text]{width:100%;padding 25px 25px;
+margin:8px 0;border:2px solid blue;border-radius:4px;outline:none;}
+input[type=text]:focus{background-color: lightblue;}
+textarea {
+  width: 50%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid blue;
+  border-radius: 4px;
+  background-color:white;
+  font-size: 20px;
+  resize: none;
+}
+body {
+  max-width:500px
+  padding: 10px;
+  border: 10px darkgreen;
+  margin:0px;
+  outline-style: solid;
+  outline-color: violet;
+}
+
+h1.inset {border-style: inset;border-color:rgb(192, 57, 43  
+);color:darkblue;text-align:center;font-size:80px;font-style: italic;text-shadow: 1px 2px yellow}
+h2.dashed{border-style: dashed;border-color:darkblue;color:blue;text-align:center;text-shadow: 1px  black;font-style: italic}
+p,ol,form.inset{border-style:inset;padding: 25px 25px 25px 25px;font-size:20px;color:blue;font-family: "Comic Sans MS", cursive, sans-serif;font-style: oblique}
+a{text-decoration: none;}
+div.fixed{position:fixed;top:10px;right:0;width:350px;border:3px solid darkblue;font-size:22px;text-align:center;}
+div{border-style:inset;padding: 25px 25px 25px 25px;font-size:20px;color:green;font-family: "Comic Sans MS", cursive, sans-serif;font-style: oblique}
+.img{float:right;}
+.clearfix{overflow:auto;}
+section{text-align:center;background-color:lightblue}
+a.highlight:hover{color:red;}
+</style>
+<body>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#certificates">Certificates</a></li>
+
+  <li><a href="#honours">Honours And Awards</a></li>
+  <li><a href="#projects">Projects</a></li>
+</ul>
+<div class="fixed">SUMMER PROJECT</div>
+<p id="demo" style="text-align:center;font-size:30px;color:maroon;"></p>
+<h1 class="inset">AISHA SARTAJ</h1>
+<h2 class="dashed">A LIL' ABOUT MYSELF</h2>
+<div class="clearfix">
+<img class="img" src="aisha.jpg" alt="aisha sartaj" width=200px height=200px>
+Hi all, I am <b>AISHA SARTAJ</b>, and I am currently pursuing my engineering in <a class="highlight" href="http://www.vit.ac.in/">VIT</a>,VELLORE.
+I am new to coding and its going tough right now,and so I aim to improve my coding skills in this summer.
+Though my guity pleasure is sleeping, I still work hard and so like challenges as it keeps me motivated. <section>
+  <button onclick="myFunction()" style="font-size:20px; text-align: center;">Aisha Sartaj at <a class="highlight" href="http://www.ietvit.com/tuc/">VITTUC'19</a></button><p id="demo"></p><script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "MY FIRST EVENT IN IET!!";
+}
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toUTCString();
+</script></section> </div>
+
+<p style="text-align:center;color:darkred;"><b>
+<span>EVERYTHING IS </span><span style="text-decoration:line-through;">IM</span><span>POSSIBLE</span></b>
+</p>
+<h2 class="dashed">MY CONTACT DETAILS</h2>
+<ol class="inset">
+<li>email id: aishasartaj1@gmail.com</li>
+<li>ph.no. :7675896783 </li>
+<li>F-623,girls hostel,vit university,vellore</li>
+</ol>
+<h2 class="dashed">WEBSITES OF MY CHAPTER AND CLUB</h2>
+<ol class="inset">
+<li style="font-size:100%"><a class="highlight" href="https://www.theiet.org/">INSTITUTION OF ENGINEERING AND TECHNOLOGY(IET)</a></li>
+<li style="font-size:100%"><a class="highlight" href="https://www.toastmasters.org/">TOASTMASTERS INTERNATIONAL(TMI) </a></li>
+</ol>
+<h2 class="dashed">MY FAVOURITE SONGS</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m7Bc3pLyij0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+<br>
+<a  href="contact.html" style="font-size: 50px;border-style: inset;border-color:violet;color:black;background-color :lightblue;text-align:center;">CONTACT ME</a>
+
+
+</body>
+</html>
